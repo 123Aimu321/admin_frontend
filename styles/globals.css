@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-start-rgb));
+}
+
+/* Ensure text is visible on all backgrounds */
+.text-gray-900 {
+  color: #111827 !important;
+}
+
+.text-gray-800 {
+  color: #1f2937 !important;
+}
+
+.text-gray-700 {
+  color: #374151 !important;
+}
+
+.text-gray-600 {
+  color: #4b5563 !important;
+}
+
+.text-gray-500 {
+  color: #6b7280 !important;
+}
+
+/* Ensure form elements have proper contrast */
+input, select, textarea {
+  color: #111827 !important;
+  background-color: white !important;
+}
+
+input::placeholder, select::placeholder, textarea::placeholder {
+  color: #6b7280 !important;
+}
+
+/* Override any white text that might be invisible */
+.text-white {
+  color: #ffffff !important;
+}
+
+/* Ensure cards have proper contrast */
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+.bg-gray-50 {
+  background-color: #f9fafb !important;
+}
+
+.bg-gray-100 {
+  background-color: #f3f4f6 !important;
+}
+
+/* Button text contrast */
+.btn-primary {
+  color: white !important;
+}
+
+/* Table text contrast */
+table {
+  color: #111827 !important;
+}
+
+th, td {
+  color: #111827 !important;
+}
+
+/* Modal text contrast */
+.modal-content {
+  color: #111827 !important;
+}

@@ -1,0 +1,77 @@
+/* ===============================
+   PAGE LOADING WRAPPER
+=============================== */
+.events-loading {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: #f8fafc;
+}
+
+/* ===============================
+   STATS SKELETON
+=============================== */
+.stats-skeleton {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.stat {
+  height: 90px;
+  border-radius: 14px;
+}
+
+/* ===============================
+   CALENDAR SKELETON
+=============================== */
+.calendar-skeleton {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.header {
+  height: 40px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.day {
+  height: 90px;
+  border-radius: 12px;
+}
+
+/* ===============================
+   SKELETON BASE
+=============================== */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    #e5e7eb 25%,
+    #f1f5f9 37%,
+    #e5e7eb 63%
+  );
+  background-size: 400% 100%;
+  animation: shimmer 1.4s ease infinite;
+}
+
+/* ===============================
+   ANIMATION
+=============================== */
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
